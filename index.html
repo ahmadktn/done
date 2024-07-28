@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/done2.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Done!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#343047',
+            secondary: '#9b7aba',
+            neutral: '#ede3e2'
+          },
+          fontFamily: {
+            rubik: ["Rubik", 'sans-serif'],
+            urbanist: ["Urbanist", 'sans-serif']
+          }
+        }
+      }
+    }
+    </script>
+  </head>
+  <body class="font-urbanist bg-primary flex flex-col items-center justify-center min-h-screen text-neutral">
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
